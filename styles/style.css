@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+:root {
+    --color-primario: #A7ADF0;
+    --color-terciario: #F0E0A8;
+    --color-enfasis: #9698B0;
+    --color-hover: #ddb074;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-enfasis);  
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 2% ;
+    background-color: var(--color-primario);
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    font-size: large;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2%;
+    height: 45vh;
+}
+
+.texto {
+    width: 70%; 
+    height: 100%; 
+    border-radius: 15px; 
+    border: 2px solid var(--color-enfasis); 
+    padding: 20px; 
+    box-sizing: border-box; 
+    background-color: var(--color-primario); 
+    font-size: 20px; 
+    font-family: "Dosis", sans-serif;
+    resize: none;
+}
+
+.texto::placeholder {
+    color: #000000; /* Cambia 'red' por el color que desees */
+}
+
+.imagen {
+    width: 30%;
+    object-fit: cover;
+
+}
+
+.contenedor-botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3%;
+    gap: 20%;
+    
+}
+
+.boton {
+    width: 20%;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000 ;
+    border: 2px solid var(--color-terciario);
+    background-color: var(--color-terciario);
+}
+
+.boton:hover {
+    background-color: var(--color-hover);
+    border: 2px solid var(--color-hover);
+}
+
+.subtitulo {
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    font-size: x-large;
+
+}
+
+.footer {
+    padding: 1.5%;
+    background-color: var(--color-primario);
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    font-size: medium;
+}
+
+/* Estilos para tablet */
+@media  (max-width: 1150px) and  (max-height: 1370px) {
+
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2%;
+        height: 45vh;
+    }
+
+    .texto {
+        width: 50%;
+    }
+
+    .imagen {
+        width: 50%;
+    }
+
+    .contenedor-botones {
+        gap: 15%;
+        
+    }
+    
+
+    
+}
+  
+  /* Estilos para celular */
+@media (max-width: 759px) and (max-height: 1019px) {
+
+    .header {
+        font-size: x-small;
+        background-color: var(--color-terciario);
+    }
+
+    .contenedor {
+        height: 30vh;
+    }
+    
+    
+    .imagen {
+        display: none;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    .contenedor-botones {
+        gap: 40%;
+        
+    }
+    
+    .boton {
+        width: 30%;
+    }
+
+   
+}
+  
+

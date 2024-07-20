@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo">Encriptador y Desencriptador de Texto</h1>
+    </header>
+    <section class="contenedor">
+        <textarea id="areaTexto1" class="texto" placeholder="Inserte su texto aquí: " ></textarea>
+        <img class="imagen" src="/assets/hablar.png">
+    </section>
+    <div class="contenedor-botones">
+        <button onclick="encriptar();" class="boton"> Encriptar </button>
+        <button onclick="desencriptar();" class="boton"> Desencriptar </button>
+    </div>
+    <h2 class="subtitulo">Texto resultante</h2>
+    <section class="contenedor">
+        <textarea id="areaTexto2" class="texto" placeholder="Sin texto aún"></textarea>
+        <img class="imagen" src="/assets/encriptar.png">
+    </section>
+    <div class="contenedor-botones">
+        <button class="boton" onclick="copiar();">Copiar</button>
+    </div>
+    <footer class="footer">
+        <p> Desarrollado por Naomii Millan </p>
+    </footer>
+
+    <script src="app.js" defer></script> 
+</body>
+
+</html>
